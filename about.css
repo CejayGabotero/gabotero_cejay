@@ -1,0 +1,287 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("Bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.about-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 55px auto;
+    padding-bottom: 70px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header p {
+    color: rgb(101, 231, 101);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.about-header h1 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+.about-header div {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(101, 231, 101);
+    margin: 18px auto;
+    border-radius: 10px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+}
+
+.profile h2 {
+    color: rgb(101, 231, 101);
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.profile-left p {
+    color: #d0d0d0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.profile-left strong {
+    color: rgb(101, 231, 101);
+}
+
+.profile-right {
+    padding-left: 25px;
+    border-left: 1px solid rgba(101, 231, 101, 0.4);
+}
+
+.info-row {
+    margin-bottom: 22px;
+}
+
+.info-row span {
+    display: block;
+    color: rgb(101, 231, 101);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.info-row p {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.skills-section {
+    margin-top: 60px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading p {
+    color: rgb(101, 231, 101);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name span:first-child {
+    font-weight: bold;
+}
+
+.skill-name span:last-child {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.bar {
+    width: 100%;
+    height: 7px;
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: rgb(101, 231, 101);
+    border-radius: 10px;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.java {
+    width: 60%;
+}
+
+.cpp {
+    width: 60%;
+}
+
+.mysql {
+    width: 55%;
+}
+
+.goals {
+    margin-top: 60px;
+}
+
+.goals h2 {
+    color: rgb(101, 231, 101);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.goal-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.goal-list div {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 3px solid rgb(101, 231, 101);
+}
+
+.goal-list strong {
+    color: rgb(101, 231, 101);
+    font-size: 25px;
+}
+
+.goal-list p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .profile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-right {
+        padding-left: 0;
+        padding-top: 25px;
+        border-left: none;
+        border-top: 1px solid rgba(101, 231, 101, 0.4);
+    }
+
+    .goal-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about-container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .about-header h1 {
+        font-size: 38px;
+    }
+
+    .profile {
+        padding: 25px;
+    }
+
+    .profile-left p {
+        font-size: 15px;
+    }
+
+    .skills-section {
+        padding: 25px;
+    }
+
+    .section-heading h2,
+    .goals h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .about-header h1 {
+        font-size: 32px;
+    }
+
+    .about-header p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .profile {
+        padding: 20px;
+    }
+
+    .skills-section {
+        padding: 20px;
+    }
+
+    .skill-name span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .about-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .about-header h1 {
+        font-size: 34px;
+    }
+}
